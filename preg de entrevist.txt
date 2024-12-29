@@ -1,0 +1,5 @@
+javascript is a language sincrono
+
+
+un boton q haga add 
+y un boto q reste o quite

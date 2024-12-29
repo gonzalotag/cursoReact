@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* header */
+.Header {
+  height: 250px;
+  background-image: radial-gradient(
+    circle at 95.45% -4.17%,
+    #f9e8a8 0,
+    #efeaa7 5%,
+    #e3eaa6 10%,
+    #d5eaa6 15%,
+    #c7e9a5 20%,
+    #b6e7a6 25%,
+    #a3e5a6 30%,
+    #8de1a8 35%,
+    #73ddaa 40%,
+    #50d7ad 45%,
+    #00d1b1 50%,
+    #00cab6 55%,
+    #00c4bd 60%,
+    #00bec6 65%,
+    #00b8cf 70%,
+    #00b3d9 75%,
+    #00aee3 80%,
+    #00a9ec 85%,
+    #00a5f4 90%,
+    #00a0fa 95%,
+    #009cff 100%
+  );
+  color: white;
+  display: flex;
+  align-items: flex-center;
+  justify-content: space-between;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
+  margin-right: 200px;
+  box-shadow: rgb(38 57 77) 0px 4px 30px -10px;
+}
+
+.leftHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+}
+
+.tituloHeader {
+  font-family: "WindSong", cursive;
+  font-weight: 400px;
+  font-size: 64px;
+  line-height: 32px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.subtitulosHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "IBM Plex Serif", serif;
+
+  font-size: 16px;
+  font-weight: 200px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.subtituloFecha {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .Header {
+    margin-right: 0px;
+  }
+  .rightHeader {
+    margin-left: 5px;
+  }
+  .rightHeader img {
+    width: 150px;
+  }
+
+  .tituloHeader {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+
+  .subtitulosHeader {
+    width: 250px;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+  .subtituloFecha {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* FILTROS  */
+
+.Filtros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: radial-gradient(
+    circle at 4.55% -4.17%,
+    #ddff8d 0,
+    #c7ff96 7.14%,
+    #afff9f 14.29%,
+    #95ffa7 21.43%,
+    #79ffae 28.57%,
+    #5bf2b2 35.71%,
+    #39e3b3 42.86%,
+    #00d1b1 50%,
+    #00bfad 57.14%,
+    #00afa8 64.29%,
+    #00a2a5 71.43%,
+    #0097a2 78.57%,
+    #008ea0 85.71%,
+    #0088a0 92.86%,
+    #0084a2 100%
+  );
+  height: 60px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 3px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.inputFechas {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  color: rgb(14, 14, 14);
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  cursor: pointer;
+}
+
+.selects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  color: rgb(14, 14, 14);
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  cursor: pointer;
+}
+
+.parHabitacion {
+  display: flex;
+}
+
+.iconoHabitacion {
+  background-color: #4044c9;
+}
+
+.limpiarButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: #0084a2; */
+  background-color: #009cff;
+  color: white;
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: bold; */
+  font-size: 16px;
+  width: 90px;
+  height: 40px;
+  box-shadow: 2px 1px 15px -4px rgb(0 0 0 / 7);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mensajeNoHayHoteles {
+  background-color: #a8dff9;
+  color: rgb(43, 43, 43);
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 400px;
+}
+.mensajeTitulo {
+  position: absolute;
+  top: 360px;
+  left: 300px;
+  z-index: 1;
+}
+.lottie {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .Filtros {
+    flex-direction: column;
+    height: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+
+  .inputFechas {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .selects {
+    width: 100%;
+  }
+
+  .parHabitacion {
+    width: 100%;
+  }
+
+  .limpiarButton {
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+
+  .mensajeNoHayHoteles {
+    font-size: 25px;
+    width: 100%;
+  }
+  .mensajeTitulo {
+    top: 550px;
+    left: 0px;
+  }
+  .lottie {
+    margin-top: 0px;
+  }
+}
+
+/* CUERPO -HOTELES */
+
+.listaHotelesContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 80px;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .listaHotelesContainer {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* CARTA DEL HOTEL  */
+
+.CartaHotelContainer {
+  background-color: whitesmoke;
+  width: 340px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 31px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.ImagenPortada {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contenedorTextoCartaHotel {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.tituloCartaHotel {
+  color: rgb(14, 14, 14);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "IBM Plex Serif", serif;
+  height: 44px;
+  padding-top: 10px;
+}
+.contenedorFechas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+.desdeCartaHotel {
+  display: flex;
+  align-items: center;
+  background-color: #4044c9;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  height: 32px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hastaCartaHotel {
+  display: flex;
+  align-items: center;
+  background-color: #4044c9;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  height: 32px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.iconoCalendario {
+  display: flex;
+  margin-right: 5px;
+  margin-left: -1px;
+}
+.descripcionCartaHotel {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  color: back;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+  overflow: auto;
+  height: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+
+.ciudadCartaHotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 206, 250);
+  color: rgb(14, 14, 14);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedorCapacidadPrecio {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.capacidadCartaHotel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  color: rgb(14, 14, 14);
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  width: 160px;
+  height: 35px;
+}
+
+.precioCartaHotel {
+  width: 115px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(14, 14, 14);
+  background-color: rgb(205, 206, 250);
+  border-radius: 5px;
+}
+
+.botonReservarCartaHotel {
+  background-color: #00d1b2;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: none;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* SCROLL BAR  */
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    110deg,
+    #00bfad 57%,
+    #00afa8 64%,
+    #00a2a5 71%,
+    #0097a2 78%,
+    #008ea0 85%,
+    #0088a0 92%,
+    #0084a2 100%
+  );
+  border-radius: 22px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    150deg,
+    #afff9f 14%,
+    #95ffa7 21%,
+    #79ffae 29%,
+    #5bf2b2 35%,
+    #39e3b3 42%,
+    #00d1b1 50%,
+    #00bfad 57%
+  );
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
